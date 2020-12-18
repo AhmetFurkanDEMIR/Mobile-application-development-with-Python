@@ -310,3 +310,8 @@ briefcase run iOS -d 4768AA69-497B-4B37-BD0C-3961756C38AC
 ```
 
 This will start the iOS simulator, install your app, and start it. You should see the simulator start, and eventually open your iOS application:
+
+
+## Result
+
+We wrote an application with Python (Toga), then ran these codes with BeeWare on Android and iOS devices. In the mobile space, I recommend Flutter, Kotlin, Swift and objective c programming languages instead of Python.
