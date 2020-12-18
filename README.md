@@ -256,9 +256,12 @@ To run your application, run briefcase run android. When you do this, you’ll b
 ```linux
 briefcase run android
 ```
-![b](https://user-images.githubusercontent.com/54184905/102661536-0f224e00-418e-11eb-860e-2d5aae7f8371.png)
-![b](https://user-images.githubusercontent.com/54184905/102661540-10ec1180-418e-11eb-8536-9675fc901808.png)
-![b](https://user-images.githubusercontent.com/54184905/102661550-13e70200-418e-11eb-8b50-c8c8a2f19d79.png)
+
+![Screenshot_2020-12-16_17-34-25](https://user-images.githubusercontent.com/54184905/102362081-05012380-3fc5-11eb-92b4-f265bf11be2d.png)
+
+![Screenshot_2020-12-16_17-50-52](https://user-images.githubusercontent.com/54184905/102364507-9376a480-3fc7-11eb-8842-75dc4e429536.png)
+
+![Screenshot_2020-12-16_17-52-33](https://user-images.githubusercontent.com/54184905/102364511-940f3b00-3fc7-11eb-8cd8-100a7f6926d8.png)
 
 
 ## Compiling the Python codes we have written for iOS platforms with Xcode.
@@ -283,7 +286,7 @@ briefcase build iOS
 
 ![asd](https://user-images.githubusercontent.com/54184905/102660620-61fb0600-418c-11eb-940d-23515d5bda22.png)
 
-![asd](https://user-images.githubusercontent.com/54184905/102660713-8d7df080-418c-11eb-9ae0-4d3f6ff45ee9.png)7
+![asd](https://user-images.githubusercontent.com/54184905/102660713-8d7df080-418c-11eb-9ae0-4d3f6ff45ee9.png)
 
 ![s](https://user-images.githubusercontent.com/54184905/102660715-8eaf1d80-418c-11eb-87a2-44e5e20b54a9.png)
 
