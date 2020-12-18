@@ -256,12 +256,10 @@ To run your application, run briefcase run android. When you do this, you’ll b
 ```linux
 briefcase run android
 ```
+![b](https://user-images.githubusercontent.com/54184905/102661536-0f224e00-418e-11eb-860e-2d5aae7f8371.png)
+![b](https://user-images.githubusercontent.com/54184905/102661540-10ec1180-418e-11eb-8536-9675fc901808.png)
+![b](https://user-images.githubusercontent.com/54184905/102661550-13e70200-418e-11eb-8b50-c8c8a2f19d79.png)
 
-![Screenshot_2020-12-16_17-34-25](https://user-images.githubusercontent.com/54184905/102362081-05012380-3fc5-11eb-92b4-f265bf11be2d.png)
-
-![Screenshot_2020-12-16_17-50-52](https://user-images.githubusercontent.com/54184905/102364507-9376a480-3fc7-11eb-8842-75dc4e429536.png)
-
-![Screenshot_2020-12-16_17-52-33](https://user-images.githubusercontent.com/54184905/102364511-940f3b00-3fc7-11eb-8cd8-100a7f6926d8.png)
 
 ## Compiling the Python codes we have written for iOS platforms with Xcode.
 
