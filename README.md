@@ -112,7 +112,6 @@ from toga.style.pack import *
 def Operation(number):
 
     iff = []
-
     number = int(number)
 
     if number%2==0:
@@ -126,14 +125,12 @@ def Operation(number):
     if number==0:
 
         iff.append("sayi=0")
-
         iff.append("Asal degil")
 
 
     elif number<0:
 
         iff.append("sayi<0")
-
         iff.append("Asal degil")
 
     else:
@@ -166,8 +163,10 @@ def Operation(number):
 def build(app):
 
     box = toga.Box()
+    
     name_label = toga.Label('Sayi : ', style=Pack(text_align=LEFT))
     name_input = toga.TextInput()
+    
     run_label = toga.Label("", style=Pack(text_align=LEFT))
     run_label_1 = toga.Label("", style=Pack(text_align=LEFT))
     run_label_2 = toga.Label("", style=Pack(text_align=LEFT))
@@ -197,12 +196,13 @@ def build(app):
 
     box.add(name_label)
     box.add(name_input)
+    
     box.add(run_label)
     box.add(run_label_1)
     box.add(run_label_2)
     box.add(button)
+    
     box.style.update(direction=COLUMN, width=100, padding_top=10)
-
     return box
 
 def main():
@@ -265,3 +265,47 @@ briefcase run android
 
 
 ## Compiling the Python codes we have written for iOS platforms with Xcode.
+
+Now, we’re going to take our application, and deploy it as an iOS application.
+
+The process of deploying an application to iOS is very similar to the process for deploying as a desktop application. First, you run the create command - but this time, we specify that we want to create an iOS application:
+
+```linux
+briefcase create iOS
+```
+
+![Ekran Resmi 2020-12-18 22 15 18](https://user-images.githubusercontent.com/54184905/102660528-38da7580-418c-11eb-8a98-00a8c8e7adac.png)
+
+Once this completes, we’ll now have an iOS directory in your project. This directory will contain a "number" folder, which will contain an Xcode project, as well as the support libraries and the application code needed for the application.
+
+You can then use Briefcase to compile your app using the build command. You’ll be prompted to select a device to compile for; if you’ve got simulators for multiple iOS versions installed, you may also be asked which iOS version you want to target. The options you are shown may differ from the options show in this output; for our purposes, it doesn’t matter which simulator you pick.
+
+```linux
+briefcase build iOS
+```
+
+![asd](https://user-images.githubusercontent.com/54184905/102660620-61fb0600-418c-11eb-940d-23515d5bda22.png)
+
+![asd](https://user-images.githubusercontent.com/54184905/102660713-8d7df080-418c-11eb-9ae0-4d3f6ff45ee9.png)7
+
+![s](https://user-images.githubusercontent.com/54184905/102660715-8eaf1d80-418c-11eb-87a2-44e5e20b54a9.png)
+
+We’re now ready to run our application. You could do this by running briefcase run iOS. If you run Briefcase in that way, you’ll be asked again for the device you want to target. If you already know the devices that are available, you can tell briefcase to use that simulator by providing a -d (or --device) option. Using the name of the device you selected when you built your application, run:
+
+```linux
+briefcase run iOS -d "iPhone 11"
+```
+
+If you have multiple iPhone 11 simulators, briefcase will pick the highest iOS version; if you want to pick a particular iOS version, you tell it to use that specific version:
+
+```linux
+briefcase run iOS -d "iPhone 11::13.3"
+```
+
+Or, you can name a specific device UDID:
+
+```linux
+briefcase run iOS -d 4768AA69-497B-4B37-BD0C-3961756C38AC
+```
+
+This will start the iOS simulator, install your app, and start it. You should see the simulator start, and eventually open your iOS application:
