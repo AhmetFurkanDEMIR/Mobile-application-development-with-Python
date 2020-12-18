@@ -72,6 +72,7 @@ First, let's set up the "briefcase" and "Toga" and create a study.
 **Install the BeeWare and Toga tools**
 ```linux
 python3 -m pip install briefcase
+pip3 install beeware
 pip3 install briefcase
 pip3 install toga
 ```
